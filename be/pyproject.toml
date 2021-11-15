@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "my-day"
+version = "0.1.0"
+description = "graphql sandbox"
+authors = ["Rain Li <yrainli@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.70.0"
+pydantic = "^1.6"
+black = "^21.10b0"
+uvicorn = "^0.15.0"
+graphene = "^3.0b5"
+graphene-pydantic = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = {version = "^21.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
